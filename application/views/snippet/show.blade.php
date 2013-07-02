@@ -5,9 +5,7 @@
 @endsection
 
 @section('main')
-	<pre class="prettyprint linenums">
-		{{htmlspecialchars($snippet)}}
-	</pre>
+	<pre class="prettyprint linenums">{{htmlspecialchars($snippet)}}</pre>
 
 	<div class="btn-group nav">
 	{{ HTML::link_to_route('fork_snippet', 'Fork', $id, array('class' => 'btn btn-warning')) }}
